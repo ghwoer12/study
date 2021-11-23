@@ -4,14 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 
-public class _2750_수정렬하기 {
-
+public class _2751_수정렬하기2 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		ArrayList<Integer> arr = new ArrayList<>();
@@ -19,17 +16,17 @@ public class _2750_수정렬하기 {
 			arr.add(Integer.parseInt(br.readLine()));
 		}
 		
-//		Arrays.sort(arr);//
-		Collections.sort(arr); //comparator, comparable 인터페이스를 쓸수있나봐 
+		Collections.sort(arr);
 		
-//		StringBuilder sb = new StringBuilder(); // 메모리는 좀 사용하지만 시간은 빠룸!
 //		for(int a:arr) {
-//			sb.append(a+"\n");
-//		} 
-//		System.out.println(sb); // 16120KB 164ms
-		for(int a : arr) { //메모리는 덜 먹지만 시간이 오래걸리네
-			System.out.println(a); // 14952KB 172ms
-		} 
+//			System.out.println(a);
+//		} // 왕 얘는 시간 초과났는데 빌더로 하니까 통과했어 우와!!!
+		
+		StringBuilder sb = new StringBuilder();
+		for(int a:arr) {
+			sb.append(a+"\n");
+		}
+		System.out.println(sb);
 	}
 
 }
