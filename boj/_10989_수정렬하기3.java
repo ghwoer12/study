@@ -27,8 +27,11 @@ public class _10989_수정렬하기3 {
 		
 }
 /*
- * Arrays.sort : Dual-Pivot Quick Sort를 사용!
+ * -> Arrays.sort() : Dual-Pivot Quick Sort를 사용!
  * 평균 O(nlogn)의 시간복잡도를 가지지만 최악일때는 O(n제곱)을 가질수 있다는 점!
- * 카운팅 정렬 : 시간복잡도 O(N+K) K는 자릿수 -> 데이터가 많을수록 O(N)에 가깝!
- * 
+ * -> 카운팅 정렬 : 시간복잡도 O(N+K) K는 자릿수 -> 데이터가 많을수록 O(N)에 가깝!
+ * -> Collections.sort() : Timsort : Hybird Sorting algorithm.
+ * 시간복잡도는 O(n)~O(nlogn) 보장 
+ *
+ *2751 수정렬하기2는 Arrays.sort를 쓰면 n2으로 시간초과가 날수있는 예제
  */
